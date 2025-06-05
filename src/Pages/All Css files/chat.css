@@ -1,0 +1,188 @@
+.chat{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 0px 26px 26px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.chatting{
+    flex: 1;
+    background-color: transparent;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    overflow-y: scroll;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 1.12rem;
+}
+.promptbar{
+    background-color: transparent;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promptbar input{
+    background: transparent;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    height: 45px;
+    /* width: 22rem; */
+    flex: 1;
+    width: 80%;
+}
+.promotbar-container{
+    background-color: var(--promptbar);
+    border-radius: 50px;
+    width: clamp(22rem,48rem,48rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.paperclip-container{
+    height: inherit;
+    width: 50px;
+    background-color: transparent;
+    border-radius: 50px 0px 0px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.paperclip-container:hover{
+    background-color: var(--promptbar);
+}
+
+.paperclip{
+    height: 20px;
+}
+.submitting{
+    background-color: var(--promptbar);
+    height: inherit;
+    width: 50px;
+    border-radius: 0px 50px 50px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.promptsubmit{
+    background-color: rgb(195, 195, 195);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Arrowup{
+    height: 20px;
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 1; /* Firefox */
+  }
+
+
+.transparentblur{
+    z-index: 3;
+    background-color: transparent;
+    backdrop-filter: blur(1px);
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    width: clamp(22rem,60rem,60rem);
+}
+
+.response {
+    width: 100%;
+    background-color: transparent;
+}
+
+.left{
+    max-width: 90%;
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    padding: 10px;
+    border-radius: 5px; 
+    background-color: transparent;  
+    margin: 30px 0px 30px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.left p{
+    max-width: 100%;
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+    background-color: transparent; 
+    display: inline-block;
+    text-align: start;
+    border-radius: 5px;
+    padding-top: 9px;
+}
+.rightcontainer{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.right{
+    max-width: 90%;
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    padding: 10px;
+    border-radius: 5px; 
+    background-color: transparent; 
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.right p{
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+    background-color: transparent; 
+    display: inline-block;
+    text-align: start;
+    border-radius: 5px;
+    padding-top: 9px;
+}
+
+.promptlogocontainer{
+    background-color: transparent;
+    height: auto;
+    margin-right: 10px;
+}
+.promptusercontainer{
+    background-color: transparent;
+    height: auto;
+    margin-left: 10px;
+}
+
+.logodiv{
+    background-size: cover;
+    background-image: url(/Healix.png);
+    background-color: transparent;
+    border-radius: 50%;
+    height: 2.6rem;
+    width: 2.6rem;
+    border: 2px solid white;
+}

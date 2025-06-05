@@ -1,0 +1,24 @@
+:root{
+  --main:#fcc9aa;
+  --font:#012b4a;
+  --underline:#175863;
+}
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font: white;
+  color: white;
+}
+
+.app{
+  font-family: sans-serif ;
+  height: 100%;
+  width: 100%;
+  background: var(--main);
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}

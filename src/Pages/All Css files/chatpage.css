@@ -1,0 +1,124 @@
+:root{
+    /* --main:#A4DDED; */
+    --main:black;
+    --promptbar:grey;
+}
+.chatpage{
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-size: cover;
+    background-color: transparent;
+    background-image: url(/wallpaper.jpg);
+}
+
+.container-chatpage{
+    background-color: transparent;
+    height: 99%;
+    width: 99%;
+    border-radius: 2rem;
+    border: 1px solid black;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 10px;
+    overflow:hidden;
+    display: flex;
+}
+
+.sidebar{
+    background-color: rgba(129, 152, 151,0.6);
+    height: 100%;
+    width: 20%;
+    border-radius: 2rem 0px 0px 2rem;
+    min-width: 279px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+.up{
+    height: 300px;
+    background-color: transparent;
+    border-radius: 2rem 0px 0px 0rem;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.sidebar *{
+    opacity: 1;
+}
+
+.mainpage{
+    background-color: transparent;
+    height: 100%;
+    flex: 1;
+    border-radius: 0rem 2rem 2rem 0rem;
+}
+
+.nameLogo-container{
+    background-color: transparent;
+    border-radius: 2rem 0px 0px 0rem;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.logoHealix{
+    background-size: cover;
+    background-image: url(/Healix.png);
+    background-color: transparent;
+    border-radius: 50%;
+    height: 2.6rem;
+    width: 2.6rem;
+    margin-left: 20px;
+}
+
+.nameLogo-container h1{
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+.options-container{
+    background-color: transparent;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+#optionsbutton{
+    height: 50px;
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    margin-bottom: 5px;
+    background-color: transparent;
+    font-size: 1.2rem;
+}
+
+#optionsbutton:hover{
+    background-color: var(--promptbar);
+}
+
+.user-container{
+    height: 50px;
+    background-color: transparent;
+    position: relative;
+}

@@ -1,0 +1,631 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    font: white;
+    color: white;
+  }
+.register-page{
+    font-family: sans-serif ;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    background-size: cover;
+    background-image: url(/wallpaper.jpg);
+}
+
+.register-container{
+    background: transparent;
+    /* height: 54.625rem; */
+    /* width: 20rem; */
+    max-height: 641px;
+    max-width: 1280px;
+    height: clamp(38.625rem,85%,72.5rem);
+    width: clamp(20rem , 90% ,82.5rem);
+    border-radius: 2rem;
+    border: 1px solid var(--border);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    
+}
+.imageContainer{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    border-radius: inherit;
+    padding: 10px;
+}
+.register-image{
+    background-image: url(/wallpaper.jpg);
+    border: 2px solid black;
+    background-size: cover;
+    height: 100%;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    width: clamp(22em , 60% ,70.5em);
+    background-color: transparent;
+    position: relative;
+}
+ 
+.register-form{
+    background: b;
+    /* height: 54.625rem; */
+    width: 500px;
+    height: 100%;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden; 
+    top: 0px;
+    position: relative;
+    z-index: 0;
+}
+.register-form h1{
+    font-size: 3.5rem;
+    width: 100%;
+}
+
+.register-form p{
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.register-logo{
+    background-image: url(/Healix.png);
+    background-size: cover;
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+}
+
+.image-containerUpload{
+    background-color: transparent;
+    height: 100%;
+    min-width: 500px;
+    margin-right: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.info-containerUpload{
+    background-color: transparent;
+    height: 100%;
+    min-width: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+}
+
+.profileImage-container{
+    flex: 1;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+ .button-container{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+ }
+
+#toggle .profileImage-container{
+    transition: ease-in;
+    animation: leftOut 0.6s forwards;
+}
+
+#toggle .input-container{
+    transition: ease-in;
+    animation: leftIn 0.6s forwards;
+}
+
+@keyframes leftOut{
+    from{
+      transform: translateX(0px);
+    }
+    to{
+      transform: translateX(-505px);
+    }
+  }
+
+  @keyframes leftIn{
+    from{
+      transform: translateX(0px);
+    }
+    to{
+      transform: translateX(-555px);
+    }
+  }
+  
+
+#nottoggle .profileImage-container{
+    transition: ease-in;
+    animation: RightIn 0.6s forwards;
+}
+
+#nottoggle .input-container{
+    transition: ease-in;
+    animation: RightOut 0.6s forwards;
+}
+.prevtoimage{
+    cursor: pointer;
+
+    
+}
+@keyframes RightIn{
+    from{
+      transform: translateX(-505px);
+    }
+    to{
+      transform: translateX(0px);
+    }
+  }
+
+@keyframes RightOut{
+    from{
+      transform: translateX(-555px);
+    }
+    to{
+      transform: translateX(0px);
+    }
+}
+
+
+.nextToinfo{
+    border: 2px solid white;
+    outline: none;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 500px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    width: 150px;
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color: rgba(1, 43, 74, 0.3);
+  }
+
+.image-cont{
+    background-color: transparent;
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+}  
+
+.input-info{
+    background-color: transparent;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.input-container{
+    flex: 1;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 0px 0px 0px 50px;
+    align-items: center;
+}
+.info-Button-Cont{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ 
+
+.prevtoimage{
+    border: 2px solid white;
+    outline: none;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 500px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    width: 150px;
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color: rgba(1, 43, 74, 0.3);
+  }
+
+
+.RegisterBut{
+    border: 2px solid white;
+    outline: none;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 500px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    width: 150px;
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color: rgba(1, 43, 74, 0.3);
+}
+
+.profile-dp{
+    /* background-image: url(/Healix.png); */
+    background-size: cover;
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    margin-top: 20px;
+}
+
+.choosefrom{
+    height: 80px;
+    width: 85%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.Or{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.small-logo{
+    flex: 1;
+    width: 100%;  
+    background-color: transparent;
+}
+
+.UploadYourimage{
+    border: 2px solid white;
+    outline: none;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 500px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    width: 250px;
+    font-size: 1.2rem;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.picture{
+    background-color: transparent;
+    border-radius: 5px;
+    font-weight: 500px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    width: 250px;
+    font-size: 1.2rem;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.picture :hover{
+    background-color: rgba(1, 43, 74, 0.3);
+}
+
+.UploadYourimage p:hover{
+    background-color: transparent;
+}
+
+.smallLogo{
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    outline: none;
+    border: 1px solid white;
+}
+
+.smallLogo.active {
+    background-color: grey;
+  }
+
+.inputdrag{
+    background-color: transparent;
+    height: 100px;
+}
+.fullname-container,.mobile-container,.age-container{
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  min-height: 64px;
+}
+
+.fullname-container p ,.mobile-container p,.age-container p {
+  width: 300px;
+  display: flex;
+  justify-content: end;
+  font-size: 0.9rem;
+}
+.fullnameContainer{
+    margin-bottom: .3rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 300px;
+  }
+  
+  .fullnameContainer input{
+    background: transparent;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.6rem;
+    padding-left: 1.4rem;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.75);
+  }
+  
+  .fullnameContainer span
+  {
+    position: absolute;
+    width: 100%;
+    height: 0.09rem;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s;
+  }
+  .fullnameContainer input:focus + span{
+    transform: scaleX(1);
+  
+  }
+  .fullnameContainer label{
+    position: absolute;
+    font-size: 1rem;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+    transition: top 0.4s;
+  }
+  
+  
+  .fullnameContainer input:focus ~label,
+  .fullnameContainer input:valid ~label{
+    top: -0.3rem;
+  }
+
+  
+
+
+
+  .ageContainer{
+    margin-bottom: .3rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 300px;
+  }
+  
+  .ageContainer input{
+    background: transparent;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.6rem;
+    padding-left: 1.4rem;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.75);
+  }
+  
+  .ageContainer span
+  {
+    position: absolute;
+    width: 100%;
+    height: 0.09rem;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s;
+  }
+  .ageContainer input:focus + span{
+    transform: scaleX(1);
+  
+  }
+  .ageContainer label{
+    position: absolute;
+    font-size: 1rem;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+    transition: top 0.4s;
+  }
+  
+  
+  .ageContainer input:focus ~label,
+  .ageContainer input:valid ~label{
+    top: -0.3rem;
+  }
+
+  
+
+
+
+
+  .mobilenumberContainer{
+    margin-bottom: .3rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 300px;
+  }
+  
+  .mobilenumberContainer input{
+    background: transparent;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.6rem;
+    padding-left: 1.4rem;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.75);
+  }
+  
+  .mobilenumberContainer span{
+    position: absolute;
+    width: 100%;
+    height: 0.09rem;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s;
+  }
+  .mobilenumberContainer input:focus + span{
+    transform: scaleX(1);
+  }
+  .mobilenumberContainer label{
+    position: absolute;
+    font-size: 1rem;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+    transition: top 0.4s;
+  }
+  
+  
+  .mobilenumberContainer input:focus ~label,
+  .mobilenumberContainer input:valid ~label{
+    top: -0.3rem;
+  }
+  
+.icon {
+    left: 0.2rem;
+    position: absolute;
+    font-size: 1rem;
+}
+
+
+.uploadit{
+    background-color: transparent;
+    height: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.genderContainer{
+  height: 40px;
+  width: 300px;
+  background-color: transparent;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+
+
+.maleChoose{
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid white;
+  background-image: url('/public/boy.png');
+  background-size: contain;
+
+}
+
+
+.femaleChoose{
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid white;
+  background-image: url('/public/girl.png');
+  background-size: contain;
+  margin-left: 20px;
+}
+.picture p{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.genderContainer p{
+  font-size: 18px;
+}
+
+.selected {
+  background-color: rgba(1, 43, 74, 0.3);
+}
+
+.selected.femaleChoose {
+  background-color: rgba(1, 43, 74, 0.3);
+}
+
+.unselected {
+  opacity: 0.3; /* transparent when not selected */
+}
